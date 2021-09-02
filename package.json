@@ -7,7 +7,7 @@
     "babel-cli": "6.1.18",
     "babel-polyfill": "6.1.19",
     "babel-preset-es2015": "6.1.18",
-    "browserify-middleware": "4.1.0",
+    "browserify-middleware": "8.1.0",
     "child_pty": "3.0.0",
     "clone": "1.0.0",
     "commander": "2.6.0",
@@ -21,13 +21,17 @@
     "queue3": "1.0.3",
     "term.js": "0.0.4",
     "uid2": "0.0.3",
-    "ws": "0.8.0"
+    "ws": "0.8.0",
+    "@snyk/protect": "latest"
   },
   "bin": {
     "clif": "./bin/clif"
   },
   "scripts": {
-    "postinstall": "babel lib --out-dir node"
+    "postinstall": "babel lib --out-dir node",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
-  "main": "./node/index"
+  "main": "./node/index",
+  "snyk": true
 }
