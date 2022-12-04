@@ -11,7 +11,7 @@
     "child_pty": "3.0.0",
     "clone": "1.0.0",
     "commander": "2.6.0",
-    "express": "4.11.2",
+    "express": "4.17.3",
     "keypress": "0.2.1",
     "neuquant": "^1.0.2",
     "omggif": "1.0.5",
